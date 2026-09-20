@@ -46,11 +46,11 @@ export function ImageAsset({
 
   const thumbSrc = item.srcTemplate
     ? item.srcTemplate
-        .replace("{w}", "40")
-        .replace(
-          "{h}",
-          String(Math.max(1, Math.round((40 * item.height) / item.width))),
-        )
+      .replace("{w}", "40")
+      .replace(
+        "{h}",
+        String(Math.max(1, Math.round((40 * item.height) / item.width))),
+      )
     : item.src;
 
   useEffect(() => {
@@ -66,10 +66,10 @@ export function ImageAsset({
         if (prev) return prev;
         const resolved = item.srcTemplate
           ? resolveSizedSrc(
-              item.srcTemplate,
-              displayWidth,
-              item.width / item.height,
-            )
+            item.srcTemplate,
+            displayWidth,
+            item.width / item.height,
+          )
           : item.src;
         // Write bestSrc immediately so remount before onLoad doesn't re-request.
         imageMemoryCache.set(item.id, {

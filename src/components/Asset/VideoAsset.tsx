@@ -45,7 +45,7 @@ export function VideoAsset({
   useEffect(() => {
     const player = playerRef.current;
     if (!player) return;
-    if (shouldPlay) void player.play().catch(() => {});
+    if (shouldPlay) void player.play().catch(() => { });
     else player.pause();
   }, [shouldPlay, playerVisible]);
 
