@@ -1,7 +1,5 @@
 # Media Feed — justified rows at scale
 
-**[▶ Watch the demo screencast](https://www.tella.tv/video/high-performance-media-feed-demo-9s2d)**
-
 A React + TypeScript feed that lays out mixed images and videos in justified
 rows, virtualizes thousands of items, and keeps the user anchored across
 column-count and viewport changes.
